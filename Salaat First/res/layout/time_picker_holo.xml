@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <NumberPicker
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="16dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </NumberPicker>
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:importantForAccessibility="no"
+        android:text=":" >
+    </TextView>
+
+    <NumberPicker
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="16dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/amPm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </NumberPicker>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<color name="yellow">#ffFFFFCC</color>
+    	    <color name="text_color">#ffD2D2D2</color>
+    	<color name="drawer_item_background">#ff7D7D7D</color>
+    	<color name="drawer_item_selection_handler">#ff494949</color>
+</resources>

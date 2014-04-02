@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Salaat First</string>
+    <string name="calculation_settings_title">Paramètres de calcul</string>
+    <string name="settings_text">Paramètres</string>
+    <string name="calculation_settings_sumary">La méthode de calcul des horaires du Maghrib et Ichaa, et choix de la méthode du Asr</string>
+    <string name="organization_settings_title">Choix de l\'organisation</string>
+    <string name="organization_settings_summary">Determiner les paramètres relatives au calcul des horaires du Maghrib et Ichaa</string>
+    <string name="asr_madhab_title">Temps de l\'Asr</string>
+    <string name="asr_madhab_summary">Déterminer la méthode de calcul du temps de l\'Asr</string>
+    <string name="quit_text">Quitter</string>
+    <string name="city_settings_title">Choix de l\'emplacement</string>
+    <string name="country_settings_title">Pays</string>
+    <string name="city_choice_title">Ville</string>
+    <string name="custom_city_title">Détérminer la localisation en utilisant le GPS</string>
+    <string name="wait_gps"> Attente des informations du GPS </string>
+    <string name="gps_disabled">Le service n\'est pas activé</string>
+    <string name="confirming_gps_data">Valider la localisation?</string>
+    <string name="confirm">Valider</string>
+    <string name="cancel">Annuler</string>
+    <string name="refresh_gps">Actualiser la localisation</string>
+
+    <color name="yellow">#FFFFCC</color>
+
+    <string name="fajr_name">Fajr</string>
+    <string name="sunrise_name">Lever du soleil</string>
+    <string name="dhuhr_name">Dhuhr</string>
+    <string name="asr_name">Asr</string>
+    <string name="maghrib_name">Maghrib</string>
+    <string name="ishaa_name">Ichaa</string>
+    <string name="jumua_name">Al Jumua</string>
+    <string name="notification_text1">Moins de</string>
+    <string name="notification_text2">minutes avant la prière suivante</string>
+    <string name="prayer">Priére</string>
+    <string name="prayer_settings_title">Paramètres des priéres</string>
+    <string name="prayer_settings_summary">Paramètres de l\'affichage de la fenêtre de l\'Adhan et l\'activation du mode silencieux</string>
+    <string name="show_adhan_activity_title">Fenêtre de l\'Adhan</string>
+    <string name="show_notification_title">Affichage de notification</string>
+    <string name="show_notification_summary">Afficher une notification du rapprochement de la priére suivante</string>
+    <string name="activating_silent_title">Activation du mode silencieux</string>
+    <string name="silent_mode_start_title">Le temps avant le mode silencieux</string>
+    <string name="silent_mode_duration_title">Durée du mode silencieux</string>
+    <string name="silent_mode_start_summary">Régler la durée entre l\'Adhan et le passage en mode silencieux</string>
+    <string name="silent_mode_duration_summary">Régler la durée du mode silencieux</string>
+    <string name="silent_mode_start_title_jumua">Début du mode silencieux</string>
+    <string name="silent_mode_duration_title_jumua">Fin du mode silencieux</string>
+    <string name="silent_mode_start_summary_jumua">Temps d\'activation du mode silencieux avant l\'adhan du Jumua</string>
+    <string name="silent_mode_duration_summary_jumua">La durée du mode silencieux</string>
+    <string name="changing_language_title">Changer la langue</string>
+    <string name="time_zone_title">Zone horaire</string>
+    <string name="time_zone_summary">inclure l\'heure d\'été lors de son application</string>
+    <string name="quit_message">Quitter l\'application?</string>
+    <string name="minimize_text">Minimiser</string>
+    <string name="starting_service_option_title">Lancer avec le démarrage du téléphone</string>
+    <string name="starting_service_option_summary">Déterminer si l\'application doit être lancée avec le démarrage du téléphone</string>
+    <string name="author">Hicham BOUSHABA</string>
+    <string name="realizedBy">Réalisé par</string>
+    <string name="about">A propos</string>
+    <string name="adhan_activity_text">Il est temps de la prière</string>
+    <string name="next_prayer_text">Prière suivante</string>
+    <string name="remaining_time">Il reste</string>
+    <string name="choosing_adhan_sound_title">Choisir le son de l\'adhan</string>
+    <string name="customizing_prayer_time_title">Personnaliser le temps de la prière</string>
+    <string name="prayer_times">Prières</string>
+    <string name="qibla">Qibla</string>
+    <string name="compass_settings">Paramètres de la boussole</string>
+    <string name="using_gps_name">Utilisation du GPS </string>
+    <string name="using_gps_description_gps_on">Le GPS sera utilisé pour détecter l\'emplacement</string>
+    <string name="using_gps_description_gps_off">L\'emplacement enregistré dans les paramètres sera utilisé</string>
+    <string name="adhan_sound_settings">Paramètres de l\'adhan</string>
+    <string name="volume">Volume de l\'adhan</string>
+    <string name="file_selected">est selectionné</string>
+    <string name="browse">Parcourir...</string>
+    <string name="hadith_slider_item">Hadith</string>
+    <string name="date_prayertimes_slider_item">Selectionner une date</string>
+    <string name="share_hadith_dialog">Vous pouvez partager le hadith selectionné en appuyant sur le bouton Partager ci-dessus.\n
+	   Et pour information l\'application officielle de facebook ne permet pas le partage du text.</string>
+    <string name="hadith_share_dialog_checkbox">Ne plus afficher ce message</string>
+    <string name="salaat_first_on_facebook">Salaat First sur Facebook</string>
+    <string name="cancel_all_alarms_title">Annuler toutes les alarmes</string>
+    <string name="cancel_all_alarms_summary">Annuler toutes les alarmes et notifications, ceci désactive aussi le passage automatique en mode silencieux</string>
+    <string name="vibrate_mode_title">Utiliser le mode vibreur</string>
+    <string name="notification_delay_title">Temps de notification</string>
+    <string name="notification_delay_summary">La durée entre la notification et l\'adhan</string>
+    <string name="notification_tone_title">Tonalité de notification</string>
+    <string name="prayer_global_settings_title">Paramètres généraux des prières</string>
+    <string name="prayer_specic_settings_title">Personnalisation des paramètres des prières</string>
+    <string name="global_silent_activation_title">Passage en mode silencieux</string>
+    <string name="vibrate_during_silent_activation_title">Vibration lors du passage</string>
+    <string name="use_dst_mode_title">Heure d\'été</string>
+    <string name="hijri_calendar_offset_title">Calendrier Hijri</string>
+    <string name="hijri_calendar_offset_summary">Ici vous pouvez ajuster le calendrier Hijri</string>
+    <string name="use_automatic_location_title">Déterminer la localisation courante</string>
+    <string name="use_custom_jumua_settings_title">Utiliser des paramètres spécifiques pour Al Jumua</string>
+	<string name="before_adhan">Avant l\'adhan</string>
+    <string name="after_adhan">Après l\'adhan</string>
+    <string name="silent_mode_start">Début du mode silencieux</string>
+    <string name="silent_mode_duration">Durée du mode silencieux</string>
+	<string name="adkar_slider_item">Adhkar</string>
+	<string name="new_features_title">Dérnieres fonctionnalités</string>
+	
+	
+	<string name="adkar_notifications_title">Notifications des adhkars</string>
+    <string name="adkar_assabah_notification_title">Adhkar Assabah</string>
+            <string name="adkar_assabah_notification_summary">Activer la notification d\'adhkar assabah</string>      
+    
+    <string name="adkar_assabah_time_title">Temps de notificaiton</string>
+    <string name="adkar_assabah_time_summary">Durée entre Adhkar Assabah et le lever de soleil</string>
+    
+    <string name="adkar_almassae_notification_title">Adhkar Almassae</string>
+        <string name="adkar_almassae_notification_summary">Activer la notification d\'adhkar almassae</string>      
+    <string name="adkar_almassae_time_title">Temps de notification</string>
+    <string name="adkar_almassae_time_summary">Durée entre Adhkar Almassae et La prière Maghrib</string>
+    
+    <string name="adkar_annawm_notification_title">Adhkar Annawm</string>
+    <string name="adkar_annawm_notification_summary">Activer la notification d\'adhkar annawm</string>   
+    <string name="adkar_annawm_time_title">Temps de notification</string>
+    
+    <string name="before_sunrise">avant Shorouk</string>
+    <string name="before_maghrib">avant Al Maghrib</string>
+	
+    <string name="location_refresh_mode_title">Mode d\'actualisation de la locations</string>
+    <string name="location_refresh_mode_summary">Ici vous pouvez activer l\'option d\'actualisation automatique de votre localisation</string>
+    <string name="location_refresh_period_title">Période entre actualisations</string>
+    <string name="location_refresh_period_summary">Définir la période entre les actualtions, à noter que l\'utilisation de périodes courtes peut consommer plus de batterie</string>
+
+    <string name="update_dialog_message">Une nouvelle version de Salaat First est disponible sur le Store. Souhaitez-vous effectuer la mise à jour?</string>
+    <string name="update_dialog_title">Nouvelle version disponible</string>
+    
+    <string name="update_dialog_remindMe_label">Plus tard</string>
+    <string name="update_dialog_ignore_label">Non, merci</string>
+    <string name="update_dialog_updateNow_label">Mettre à jour</string>
+    
+    <string name="finish_wizard_label">Terminer</string>
+    <string name="wizard_welcome_text"><![CDATA[Merci d\'avoir installé l\'application Salaat First <br /><br />
+        Cet assistant va vous guider pour préparer l\'application]]></string>
+    <string name="wizard_start_button">Démarrer</string>
+    
+    <string name="wizard_close_button">Fermer cet assistant</string>
+    <string name="wizard_completion_message"><![CDATA[Merci, vos paramètres ont été enregistrés. <br />
+        Vous pouvez les modifier après à traver le menu de l\'application.<br />
+        Vous pouvez maintenant commencer à utiliser l\'application.]]></string>
+    
+</resources>

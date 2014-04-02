@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    style="@style/TextColorStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mosquee"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/prayer_times_padding_right"
+         >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="3"
+                android:text="normal"
+                android:textColor="@color/text_color"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </TableRow>
+	
+         <TableRow>
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="3"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:orientation="horizontal"
+                 />
+        </TableRow>
+        
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sobhtextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fajr"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sobh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sobhtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="الصبح"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sunrisetextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chorouq"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sunrisetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="الشروق"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/dohrtextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dohr"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/dohr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/dohrtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="الظهر"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/asrtextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asr"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/asr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/asrtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="العصر"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/maghribtextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maghrib"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/maghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/maghribtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="المغرب"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ishaatextfr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ishaa"
+                android:textColor="@color/yellow"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/ishaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/text_color"
+                android:textSize="23dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/ishaatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:tag="text_arab"
+                android:text="العشاء"
+                android:textColor="@color/yellow"
+                android:textDirection="rtl"
+                android:textSize="23dp" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hicham.salaat"
+    android:versionCode="76"
+    android:versionName="2.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="org.hicham.salaat.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="org.hicham.salaat.permission.C2D_MESSAGE" />
+
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name="org.hicham.salaat.SalaatFirstApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- Activities -->
+        <activity
+            android:name="org.hicham.salaat.settings.Settings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.CitySettings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.Settings" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.ui.activities.AdhanActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.PrayerSettingsScreen"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.Settings" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.FridayPrayerSettings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Dialog.WithTitle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.PrayerSettingsScreen" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.PrayerSettings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Dialog.WithTitle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.PrayerSettingsScreen" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.wizard.WizardWelcome"
+            android:configChanges="locale" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.wizard.PrayerCalculationSettings"
+            android:configChanges="locale" />
+        <activity
+            android:name="org.hicham.salaat.ui.activities.MainActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Holo.Theme.Slider.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.CompassSettings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.Settings" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.settings.AdkarSettings"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.settings.Settings" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.ui.activities.AboutActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.ui.activities.AdkarActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hicham.salaat.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.hicham.salaat.gcm.PushNotificationDialog"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+
+        <!-- services -->
+        <service android:name="org.hicham.salaat.widget.service.SmallWidgetService" >
+        </service>
+        <service android:name="org.hicham.salaat.widget.service.LargeWidgetService" >
+        </service>
+        <service android:name="org.hicham.salaat.alarm.RingerModeChangeListener" >
+        </service>
+        <service android:name="org.hicham.salaat.location.LocationRefresher" >
+            <intent-filter>
+                <action android:name="org.hicham.salaat.ACTION_LOCATION_REFRESH" />
+            </intent-filter>
+        </service>
+        <!-- receivers -->
+        <receiver android:name="org.hicham.salaat.StartAtBootServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.HOME" >
+                </category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.hicham.salaat.widget.SmallWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/small_widget_provider" />
+        </receiver>
+        <receiver android:name="org.hicham.salaat.widget.LargeWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/large_widget_provider" />
+        </receiver>
+        <receiver android:name="org.hicham.salaat.alarm.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="org.hicham.salaat.alarm.AlarmReceiver.action" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="org.hicham.salaat.gcm.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="org.hicham.salaat" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.hicham.salaat.gcm.GCMIntentService" />
+
+        <activity android:name="ar.com.daidalos.afiledialog.FileChooserActivity" >
+        </activity>
+    </application>
+
+</manifest>
