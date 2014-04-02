@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days">
+        <item>الأحد</item>
+        <item>الإثنين</item>
+        <item>الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+    <string-array name="months_hijri">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربيع الأول</item>
+        <item>ربيع الثاني</item>
+        <item>جمادى الأولى</item>
+        <item>جمادى الثاني</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذو القعدة</item>
+        <item>ذو الحجة</item>
+    </string-array>
+    <string-array name="languages">
+        <item>العربية</item>
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="languages_values">
+        <item>ar_MA</item>
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="sounds_entries">
+        <item>المسجد الحرام بمكة</item>
+        <item>المسجد النبوي</item>
+        <item>المسجد الأقصى</item>
+        <item>عبد الباسط عبد الصمد</item>
+        <item>محمد صديق المنشاوي</item>
+        <item>مشاري العفاسي</item>
+        <item>عبد العزيز السماهري (المغرب)</item>
+    </string-array>
+    <string-array name="sounds_entryValues" translatable="false">
+        <item>makkah</item>
+        <item>madina</item>
+        <item>aqsa</item>
+        <item>abdelbaset</item>
+        <item>minshawi</item>
+        <item>afasy</item>
+        <item>maghribi</item>
+    </string-array>
+    <string-array name="asr_madhab">
+        <item>المذهب الشافعي</item>
+        <item>المذهب الحنفي</item>
+    </string-array>
+    <string-array name="asr_madhab_int">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="organizations">
+        <item>وزارة الأوقاف المغربية</item>
+        <item>جامعة العلوم الإسلامية بكراتشى</item>
+        <item>الاتحاد الإسلامي بأمريكا الشمالية</item>
+        <item>رابطة العالم الإسلامي</item>
+        <item> الهيئة العامة المصرية للمساحة</item>
+        <item> جامعة أم القرى</item>
+    </string-array>
+    <string-array name="organizations_int">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="prayer_short_names">
+        <item>الفجر</item>
+        <item>الشروق</item>
+        <item>الظهر</item>
+        <item>العصر</item>
+        <item>المغرب</item>
+        <item>العشاء</item>
+    </string-array>
+    
+    <string-array name="location_refresh_periods_entries">
+        <item>30 دقيقة</item>
+        <item>ساعة</item>
+        <item>ساعتين</item>
+    </string-array>
+    
+    <string-array name="location_refresh_periods_entryvalues">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+    
+    <string-array name="location_refresh_mode_entries">
+        <item>يدوي</item>
+        <item>تلقائي</item> 
+    </string-array>
+   
+    <string-array name="location_refresh_mode_entryvalues">
+         <item>manual</item>
+        <item>automatic</item>
+    </string-array>
+    
+    <string-array name="new_features">
+        <item>خصائص النسخة  2.0</item>
+        <item>إضافة التقويم الهجري</item>
+        <item>تحسين دقة مواقيت الصلاة</item>
+        <item>تحسين دقة تحديد الموقع</item>
+        <item>إمكانية إختيار أذان مختلف لكل صلاة</item>
+        <item>إضافة مدن جديدة لقاعدة البيانات</item>
+        <item>إمكانية تحديث الموقع تلقائيا</item>
+        <item>إضافة خاصية لإيقاف جميع التنبيهات، وخاصية لإيقاف التحويل التلقائي للوضع الصامت</item>
+        <item>إمكانية اختيار صوت التنبيه، والمدة التي يظهر فيها</item>
+        <item>إضافة ويدجت يظهر مواقيت الصلوات لليوم</item>
+        <item>إضافة خاصية لتخصيص إعدادات صلاة الجمعة</item>
+        <item>إضافة أذكار الصباح والمساء والنوم، مع إمكانية التذكير</item>
+        <item>تابع اخر مستجدات التطبيق على فيسبوك</item>
+        <item>www.facebook.com/SalaatFirst</item>
+    </string-array>
+
+</resources>

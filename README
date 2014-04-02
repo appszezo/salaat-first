@@ -1,0 +1,54 @@
+1.1.9.2
+-----------------------
+- fixing the bug of choosing timezones having a decimal value
+- preventing the adhan from playing in a call context
+1.1.9.1
+-----------------------
+- a minor bug fix
+1.1.9
+-----------------------
+-adding a parameter for customizing prayer times
+-changing timezone Preference (now it uses a ListPreference instead of EditTextPreference)
+
+1.1.6
+------------------------
+fixing a bug: wrong time when changing timeZone
+
+1.1.5
+------------------------
+-adding english language
+-adding a wizard of configuration at the first launch
+-adapting the application for ldpi devices
+
+1.1.1
+------------------------
+-adding the possibility of changing the adhan sound (7 adhans)
+
+1.1
+------------------------
+- Using seekbars for time preferences
+
+1.0.9
+------------------------
+pre-release of 1.1
+- adding a widget showing the remaining time of next prayer.
+
+1.0.4b
+------------------------
+- fix an important bug.
+
+1.0.3b
+------------------------
+- making the application compatible with phones which don't the location feature.
+- getting the location via network (if possible) if gps is not enabled or not 
+	supported.
+
+1.0.2b
+------------------------
+- changing the main package to org.hicham.salaat
+- not playing the adhan if ringer mode is set to silent or vibrate 
+- bugs fixing
+
+1.0.1b
+------------------------
+- adding a preference for automatically launching the application

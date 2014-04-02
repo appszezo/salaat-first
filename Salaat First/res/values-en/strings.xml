@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Salaat First</string>
+    <string name="calculation_settings_title">Calculation settings</string>
+    <string name="settings_text">Settings</string>
+    <string name="calculation_settings_sumary">Maghrib and ichaa calculation method, and choice of Asr Madhab</string>
+    <string name="organization_settings_title">Organization choice</string>
+    <string name="organization_settings_summary">Determine the calculation method for Al Maghrib and Al Ichaa prayers</string>
+    <string name="asr_madhab_title">Asr time</string>
+    <string name="asr_madhab_summary">Determine the Asr calculation method</string>
+    <string name="quit_text">Quit</string>
+    <string name="city_settings_title">City choice</string>
+    <string name="country_settings_title">Country</string>
+    <string name="city_choice_title">City</string>
+    <string name="custom_city_title">Determine location using GPS</string>
+    <string name="wait_gps"> Waiting GPS information </string>
+    <string name="gps_disabled">The service is disabled</string>
+    <string name="confirming_gps_data">Validate the location?</string>
+    <string name="confirm">Validate</string>
+    <string name="cancel">Cancel</string>
+    <string name="refresh_gps">Refresh the location</string>
+    <string name="fajr_name">Fajr</string>
+    <string name="sunrise_name">Sunrise</string>
+    <string name="dhuhr_name">Dhuhr</string>
+    <string name="asr_name">Asr</string>
+    <string name="maghrib_name">Maghrib</string>
+    <string name="ishaa_name">Ichaa</string>
+    <string name="jumua_name">Al Jumua</string>
+    <string name="notification_text1">less than</string>
+    <string name="notification_text2">minutes to the next Prayer</string>
+    <string name="prayer">Prayer</string>
+    <string name="prayer_settings_title">Prayers settings</string>
+    <string name="prayer_settings_summary">Showing Adhan Activity and silent activation settings</string>
+    <string name="show_adhan_activity_title">Adhan Activity</string>
+    <string name="show_notification_title">Show notifications</string>
+    <string name="show_notification_summary">Show a notification when the next prayer is close</string>
+    <string name="activating_silent_title">Activation of silent mode</string>
+    <string name="silent_mode_start_title">Time before activating the silent mode</string>
+    <string name="silent_mode_duration_title">Silent mode duration</string>
+    <string name="silent_mode_start_summary">The duration between the Adhan and silent mode activiation</string>
+    <string name="silent_mode_duration_summary">The duration of keeping silent mode active</string>
+    <string name="silent_mode_start_title_jumua">Silent mode start time</string>
+    <string name="silent_mode_duration_title_jumua">Silent mode end time</string>
+    <string name="silent_mode_start_summary_jumua">Silent mode time before the Jumua Prayer</string>
+    <string name="silent_mode_duration_summary_jumua">Silent mode duration</string>
+    <string name="changing_language_title">Choose language</string>
+    <string name="time_zone_title">Timezone</string>
+    <string name="time_zone_summary">Include Daylight Saving Time if applicable</string>
+    <string name="quit_message">Quit the application</string>
+    <string name="minimize_text">Minimise</string>
+    <string name="starting_service_option_title">Launch on boot</string>
+    <string name="starting_service_option_summary">Check to launch the application automatically on phone boot</string>
+    <string name="author">Hicham BOUSHABA</string>
+    <string name="realizedBy">Developed by</string>
+    <string name="about">About</string>
+    <string name="adhan_activity_text">Prayer time</string>
+    <string name="next_prayer_text">Next prayer</string>
+    <string name="remaining_time">remains</string>
+    <string name="choosing_adhan_sound_title">Choose adhan sound</string>
+    <string name="customizing_prayer_time_title">Customize prayer time</string>
+    <string name="prayer_times">Prayer times</string>
+    <string name="qibla">Qibla</string>
+    <string name="compass_settings">Compass settings</string>
+    <string name="using_gps_name">Use GPS </string>
+    <string name="using_gps_description_gps_on">GPS will be used for detecting the location</string>
+    <string name="using_gps_description_gps_off">The location used in the settings will be used</string>
+    <string name="adhan_sound_settings">Adhan settings</string>
+    <string name="volume">Adhan\'s Volume</string>
+    <string name="file_selected">is selected</string>
+    <string name="browse">Browse...</string>
+    <string name="hadith_slider_item">Hadith</string>
+    <string name="date_prayertimes_slider_item">Choose a date</string>
+    <string name="share_hadith_dialog">You can share the hadith using the share button.\n And for information the official Facebook application doesn\'t allow text sharing.</string>
+    <string name="hadith_share_dialog_checkbox">Don\'t show this message next time</string>
+    <string name="salaat_first_on_facebook">Salaat First on Facebook</string>
+    <string name="cancel_all_alarms_title">Cancel all alarms</string>
+    <string name="cancel_all_alarms_summary">Cancel all alarms and notifications, this cancel also the automatic activation of silent mode</string>
+    <string name="vibrate_mode_title">Use the vibrate mode</string>
+    <string name="notification_delay_title">Notification Time</string>
+    <string name="notification_delay_summary">Duration between notification and adhan</string>
+    <string name="notification_tone_title">Notification tone</string>
+    <string name="prayer_global_settings_title">Global settings</string>
+    <string name="prayer_specic_settings_title">Customize specific prayer\'s settings</string>
+    <string name="global_silent_activation_title">Activation of silent mode</string>
+    <string name="vibrate_during_silent_activation_title">Vibrate during switching</string>
+    <string name="use_dst_mode_title">Daylight Savings Time</string>
+    <string name="hijri_calendar_offset_title">Adjust the hijri calendar</string>
+    <string name="hijri_calendar_offset_summary">Here you can adjust the hijri calendar</string>
+    <string name="use_automatic_location_title">Determine the current location</string>
+    <string name="use_custom_jumua_settings_title">Use custom settings for Jumua</string>
+    <string name="before_adhan">Before Adhan</string>
+    <string name="after_adhan">After Adhan</string>
+    <string name="silent_mode_start">Silent mode start time</string>
+    <string name="silent_mode_duration">Silent mode duration</string>
+    <string name="new_features_title">Features of last update</string>
+    
+    <string name="adkar_slider_item">Athkar</string>
+    
+    <string name="adkar_notifications_title">Athkar notifications</string>
+    <string name="adkar_assabah_notification_title">Athkar Assabah</string>
+    <string name="adkar_assabah_notification_summary">Activate Athkar Assabah reminder</string>
+    <string name="adkar_assabah_time_title">Notification time</string>
+    <string name="adkar_assabah_time_summary">Duration between Athkar Assabah and sunrise</string>
+    
+    <string name="adkar_almassae_notification_title">Athkar Almassae</string>
+    <string name="adkar_almassae_notification_summary">Activate Athkar Almassae reminder</string>
+    <string name="adkar_almassae_time_title">Notification time</string>
+    <string name="adkar_almassae_time_summary">Duration between Athkar Almassa\' and sunrise</string>
+    
+    <string name="adkar_annawm_notification_title">Athkar Annawm reminder</string>
+    <string name="adkar_annawm_notification_summary">Activate Athkar Annawm reminder</string>
+    <string name="adkar_annawm_time_title">Notification time</string>
+    
+    <string name="before_sunrise">before sunrise</string>
+    <string name="before_maghrib">before maghrib</string>
+	
+    <string name="location_refresh_mode_title">Location Refresh Mode</string>
+    <string name="location_refresh_mode_summary">Here you can activate the option of automatic refresh of the location</string>
+    <string name="location_refresh_period_title">Time between updates</string>
+    <string name="location_refresh_period_summary">Define the periods between location updates, using short periods may consume more battery</string>
+    
+    <string name="update_dialog_message">A new version of Salaat First is available on the store. Would you like to update?</string>
+    <string name="update_dialog_title">New version available</string>
+    
+    <string name="update_dialog_remindMe_label">Remind me later</string>
+    <string name="update_dialog_ignore_label">No thanks</string>
+    <string name="update_dialog_updateNow_label">Update now</string>
+    
+    <string name="finish_wizard_label">finish</string>
+    <string name="wizard_welcome_text"><![CDATA[Thanks for installing Salaat First<br /><br />
+        This wizard will guide you to prepare the application]]></string>
+    <string name="wizard_start_button">Start</string>
+    <string name="wizard_close_button">Colse this windows</string>
+    <string name="wizard_completion_message"><![CDATA[Thanks, your settings have been saved.<br />
+        You can change those settings later using the menu of application. <br /> You can now start using the application.]]></string>
+    
+</resources>
