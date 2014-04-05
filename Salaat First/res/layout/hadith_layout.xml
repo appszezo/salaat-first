@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_holo_dark" >
+    android:background="@drawable/background_holo_dark"
+    android:orientation="vertical" >
 
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/Holo.Theme"
+        />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" 
@@ -49,5 +62,10 @@
             android:textSize="@dimen/standard_text_size" />
 
     </LinearLayout> 
+
+
 </ScrollView> 
+
+
 </RelativeLayout>
+</LinearLayout>

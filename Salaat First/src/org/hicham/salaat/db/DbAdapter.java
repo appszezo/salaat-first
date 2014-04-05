@@ -130,6 +130,16 @@ public class DbAdapter {
 						.getColumnIndex("reference")));
 		return hadith;
 	}
+	
+	public Cursor getAhadith(String query) {
+		
+		Cursor c=db.rawQuery("SELECT rowid as _id, hadith FROM "+AHADITH_TABLE+" WHERE "
+				+ "replace(replace(replace(replace(replace(replace(replace(replace(hadith,'َ', ''),'ً',''),'ُ',''),'ٌ',''),'ْ',''),'ِ',''),'ٍ',''),'ّ','')"
+				+ " LIKE replace(replace(replace(replace(replace(replace(replace(replace("+
+				DatabaseUtils.sqlEscapeString("%"+query+"%")
+						+ ",'َ', ''),'ً',''),'ُ',''),'ٌ',''),'ْ',''),'ِ',''),'ٍ',''),'ّ','')", null);
+		return c;
+	}
 
 	public long getHadithTableSize() {
 		return DatabaseUtils.queryNumEntries(db, AHADITH_TABLE);

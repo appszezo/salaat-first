@@ -82,4 +82,10 @@ public class AhadithDatabaseHelper {
 		Hadith hadith = dBAdapter.getHadith(key);
 		return hadith;
 	}
+	
+	public static Hadith getHadith(int id)
+	{
+		Hadith hadith = dBAdapter.getHadith(id);
+		return hadith;
+	}
 }

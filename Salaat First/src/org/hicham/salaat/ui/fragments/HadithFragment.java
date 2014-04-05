@@ -33,7 +33,11 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.SearchView.OnQueryTextListener;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
@@ -44,11 +48,13 @@ import android.view.ViewGroup;
 public class HadithFragment extends Fragment {
 
 	private static final String SHOW_HADITH_DIALOG_KEY = "show_hadith_key";
+	public static final String HADITH_ID = "hadith_id_key";
 	private View rootView;
 	private ShareActionProvider actionProvider;
 	private Hadith hadith;
 	private MenuItem shareMenuItem;
 	private MenuItem alternateShareMenuItem;
+	private SearchView searchView;
 
 
 	private Intent getShareIntent() {
@@ -73,7 +79,13 @@ public class HadithFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		rootView = inflater.inflate(R.layout.hadith_layout, container, false);
-		hadith = AhadithDatabaseHelper.getRandomHadith();
+		if(getArguments()!=null&&getArguments().containsKey(HADITH_ID))
+		{
+			int id=getArguments().getInt(HADITH_ID);
+			hadith = AhadithDatabaseHelper.getHadith(id);
+		}
+		else
+			hadith = AhadithDatabaseHelper.getRandomHadith();
 		Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
 				"DroidNaskh-Regular.ttf");
 		TextView hadithTextView = ((TextView) rootView
@@ -84,6 +96,32 @@ public class HadithFragment extends Fragment {
 				.findViewById(R.id.hadith_reference));
 		// hadithReferenceTextView.setTypeface(tf);
 		hadithReferenceTextView.setText(reshapeSentence(hadith.getReference()));
+		searchView=(SearchView)rootView.findViewById(R.id.searchView);
+		searchView.setIconifiedByDefault(false);
+		searchView.setOnQueryTextListener(new OnQueryTextListener() {
+			
+			public boolean onQueryTextSubmit(String query) {
+				
+				HadithSearchResultsFragment fragment=new HadithSearchResultsFragment();
+				Bundle args=new Bundle();
+				args.putString(HadithSearchResultsFragment.QUERY_KEY, query);
+				fragment.setArguments(args);
+				FragmentManager fm=getActivity().getSupportFragmentManager();
+				FragmentTransaction ft = fm.beginTransaction();
+		        ft.replace(R.id.contentView, fragment, null);
+		        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+		        ft.addToBackStack(null);
+	            ft.commitAllowingStateLoss();
+		       // ft.commit();
+				return false;
+			}
+			
+			public boolean onQueryTextChange(String newText) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		});
+		((android.widget.TextView)searchView.findViewById(R.id.search_src_text)).setTextColor(getResources().getColor(R.color.primary_text_holo_dark));
 		return rootView;
 	}
 
